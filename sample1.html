@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flex Box Display </title> 
+
+ <style>
+
+body{
+padding: 0;
+margin: 0;
+ }
+ .flex-container{
+ background-color: rgb(102, 196, 236);
+ display: flex;
+flex-direction: row-reverse; 
+flex-wrap: nowrap;
+height: 400px;
+align-items: end;
+
+ justify-content: space-evenly;  
+
+ }
+ .flex-item{
+ background-color:;
+ margin: 20px;
+ padding: 20px;
+ display: inline-flex;
+ width: 100px;
+ text-align: center;
+ }
+
+ #Home{
+ flex-grow:1;
+
+ }
+
+ #CollageGallery{
+flex-grow:2;
+ }
+
+#About{
+flex-grow:3 ;
+
+ } 
+
+
+ </style>
+
+</head>
+<body>
+ <div class="flex-container">
+ <div class="flex-item" id="Home">Home</div>
+ <div class="flex-item" id="CollageGallery">CollageGallery</div>
+<div class="flex-item" id="About">About</div> 
+<!--<div class="flex-item" id="One">Four</div>
+ <div class="flex-item" id="Two">Five</div>
+ <div class="flex-item" id="Three">Six</div>
+ <div class="flex-item" id="One">Seven</div>
+ <div class="flex-item" id="Two">Eight</div> 
+ </div> -->
+</body>
+</html>
